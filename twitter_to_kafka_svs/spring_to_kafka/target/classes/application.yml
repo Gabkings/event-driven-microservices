@@ -1,0 +1,15 @@
+twitter-to-kafka-service:
+  twitter-keywords:
+    - Java
+    - Microservices
+    - Kafka
+    - Elasticsearch
+  welcome-message: Hello microservices!
+  enable-v2-tweets: false
+  enable-mock-tweets: true
+  twitter-v2-base-url: https://api.twitter.com/2/tweets/search/stream?tweet.fields=created_at&expansions=author_id
+  twitter-v2-rules-base-url: https://api.twitter.com/2/tweets/search/stream/rules
+  twitter-v2-bearer-token: AAAAAAAAAAAAAAAAAAAAABy6pQEAAAAAPYs3BjIhaflT79SHe9zkHSHGpeg%3Di9qKCDe8zNiXPXNzeso47HuURKFtjURtWVnrwFiDY0EUDeNGyW
+  mock-min-tweet-length: 5
+  mock-max-tweet-length: 15
+  mock-sleep-ms: 10000
