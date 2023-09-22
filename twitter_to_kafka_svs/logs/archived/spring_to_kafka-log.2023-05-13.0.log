@@ -1,0 +1,566 @@
+2023-05-13 20:29:48 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 10872 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-13 20:29:48 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-13 20:29:49 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.152 seconds (JVM running for 2.411)
+2023-05-13 20:29:49 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-05-13 20:29:49 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-05-13 20:29:49 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-05-13 20:29:49 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-13 20:29:49 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.main(SpringToKafkaDemo.java:29)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.ms.spring_to_kafka.runner.impl.TwitterKafkaStreamRunner.filterQuery(TwitterKafkaStreamRunner.java:46)
+	at com.ms.spring_to_kafka.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:32)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.run(SpringToKafkaDemo.java:38)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
+	... 5 common frames omitted
+2023-05-13 20:38:40 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 25144 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-13 20:38:40 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-13 20:38:41 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.133 seconds (JVM running for 2.072)
+2023-05-13 20:38:41 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-05-13 20:38:41 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-05-13 20:38:41 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-05-13 20:38:41 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:38:41 [main] INFO  c.m.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter API with keywords {}[Java, Microservices, Kafka, Elasticsearch]
+2023-05-13 20:38:43 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:38:43 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
+2023-05-13 20:38:43 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:38:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:38:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 500 milliseconds
+2023-05-13 20:38:44 [Twitter Stream consumer /  [1][Waiting for 500 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:38:45 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:38:45 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 1000 milliseconds
+2023-05-13 20:38:46 [Twitter Stream consumer /  [1][Waiting for 1000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:38:47 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:38:47 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 2000 milliseconds
+2023-05-13 20:38:49 [Twitter Stream consumer /  [1][Waiting for 2000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:38:51 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:38:51 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 4000 milliseconds
+2023-05-13 20:38:55 [Twitter Stream consumer /  [1][Waiting for 4000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:38:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:38:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 8000 milliseconds
+2023-05-13 20:39:04 [Twitter Stream consumer /  [1][Waiting for 8000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:39:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:39:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:39:21 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:39:22 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:39:22 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:39:38 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:39:39 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:39:39 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:39:55 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:39:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:39:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:40:12 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:40:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:40:13 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:40:29 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:40:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:40:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:40:46 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:40:47 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:40:47 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:41:03 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:41:04 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:41:04 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:41:20 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:41:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:41:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:41:37 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:41:38 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:41:38 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:41:54 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:41:55 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:41:55 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:42:11 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:42:12 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:42:12 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:42:28 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:42:29 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:42:29 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:42:45 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:42:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:42:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:43:02 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:43:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:43:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:43:19 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:43:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:43:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:43:36 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:43:37 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:43:37 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:43:53 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:43:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:43:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:44:10 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:44:11 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:44:11 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:44:27 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:44:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:44:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:44:44 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:44:45 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:44:45 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:45:01 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:45:02 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:45:02 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:45:18 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:45:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:45:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:45:35 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:45:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:45:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:45:52 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:45:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:45:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:46:09 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:46:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:46:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:46:26 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:46:27 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:46:27 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:46:43 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:46:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:46:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:47:00 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:47:02 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:47:02 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:47:18 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:47:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:47:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:47:35 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:47:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:47:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:47:52 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:47:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:47:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:48:09 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:48:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:48:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:48:26 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:48:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:48:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:48:44 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:48:45 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:48:45 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:49:01 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:49:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:49:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:49:19 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:49:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:49:20 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:49:36 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:49:37 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:49:37 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:49:53 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:49:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:49:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:50:10 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:50:11 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:50:11 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:50:27 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:50:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:50:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:50:44 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:50:45 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:50:45 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:51:01 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:51:02 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:51:02 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:51:18 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:51:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:51:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:51:35 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:51:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:51:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:51:52 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:51:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:51:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:52:09 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:52:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:52:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:52:26 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:52:27 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:52:27 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:52:43 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:52:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:52:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:53:00 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:53:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:53:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:53:17 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:53:18 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:53:18 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:53:34 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:53:35 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:53:35 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:53:51 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:53:52 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:53:52 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:54:08 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:54:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:54:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:54:26 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:54:27 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:54:27 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:54:43 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:54:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:54:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:55:00 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:55:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:55:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:55:17 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:55:18 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:55:18 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:55:34 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:55:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:55:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:55:52 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:55:52 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:55:52 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:56:08 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:56:09 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:56:09 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:56:25 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:56:27 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:56:27 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:56:43 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:56:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:56:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:57:00 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:57:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:57:01 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:57:17 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:57:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:57:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:57:35 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:57:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:57:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:57:53 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:57:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:57:54 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:58:10 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:58:11 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:58:11 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:58:27 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:58:29 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:58:29 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:58:45 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:58:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:58:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:59:02 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:59:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:59:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:59:19 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:59:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:59:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:59:37 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:59:41 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:59:41 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 20:59:57 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 20:59:58 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 20:59:58 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 21:00:14 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2023-05-13 21:00:15 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2023-05-13 21:00:15 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2023-05-13 21:32:55 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 11288 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-13 21:32:55 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-13 21:32:56 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springToKafkaDemo': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.ms.spring_to_kafka.runner.StreamRunner' available: expected single matching bean but found 2: twitterKafkaStreamRunner,twitterV2KafkaStreamRunner
+2023-05-13 21:32:56 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-13 21:32:56 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.ms.spring_to_kafka.SpringToKafkaDemo required a single bean, but 2 were found:
+	- twitterKafkaStreamRunner: defined in file [C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes\com\ms\spring_to_kafka\runner\impl\TwitterKafkaStreamRunner.class]
+	- twitterV2KafkaStreamRunner: defined in file [C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes\com\ms\spring_to_kafka\runner\impl\TwitterV2KafkaStreamRunner.class]
+
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+2023-05-13 21:35:34 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 8792 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-13 21:35:34 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-13 21:35:34 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 0.993 seconds (JVM running for 1.846)
+2023-05-13 21:35:34 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-05-13 21:35:34 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-05-13 21:35:34 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-05-13 21:35:34 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-05-13 21:35:38 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-05-13 21:35:39 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-13 21:35:39 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.main(SpringToKafkaDemo.java:29)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:90)
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:41)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.run(SpringToKafkaDemo.java:38)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
+	... 5 common frames omitted
+2023-05-13 21:37:41 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 13524 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-13 21:37:41 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-13 21:37:42 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.319 seconds (JVM running for 2.284)
+2023-05-13 21:37:42 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-05-13 21:37:42 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-05-13 21:37:42 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-05-13 21:37:42 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-05-13 21:37:49 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @papa_kektus: shopping trip (2)
+#HonkaiStarRail #kafstel #kafka #stelle https://t.co/ZT1QNwYweK
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Technical Lead-Java (100% Remote) - Anytown, USA https://t.co/ax53WmV32O
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Hello mine husband thoughts on the metamorphosis by franz kafka — never read it :0 is it good ? https://t.co/39pKbCnPT0
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @cmprogramming: New to Java? Avoid these common mistakes while learning to ensure a smoother journey.
+
+Thread🧵
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@agoncal @brunoborges @starbuxman We’d love to have you back some time for sure! ☝️
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @empyreanzenith: astral express crew and stellaron hunters rivalry is pretty funny bc you have kafka and himeko being psychosexually obs…
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tako10111: #kafhime #kafka #himeko https://t.co/nXVt1wWa0b
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Ecchisama_: Kafka from Star Rail
+Artist: @raw_egg_lent https://t.co/DKRPHiwKAf
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafka_daily: NEW STELLARON HUNTER CHIBIS!!!!! GUYS PLEASE LOOK AT THEM https://t.co/RV5f9LHnCr
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @masoq095: Kafka be looking different these days
+#honkaistarrail #chainsawman #Kafka https://t.co/aW84V37pQt
+2023-05-13 21:38:35 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@KnK_Shiki 💀
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tako10111: #kafhime #kafka #himeko https://t.co/nXVt1wWa0b
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @PetaLatinoA: FRANZ KAFKA Y “LA MUÑECA VIAJERA”
+
+Kafka paseaba por el parque de Berlín cuando conoció a una pequeña que lloraba, porque…
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@katierosefuns Same. I have a few long years of studying ahead of me and i already feel burnt out
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Myth1cArts: Happy weekend~
+#kafka #fanart #honkaistarrailfanart #artistsontwitter https://t.co/aqMzYKpZI2
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Engenharia de Software em Destaque: Processo Unificado (RUP).
+
+Fique por dentro das notícias! Siga @Infodeveloperbr. Atualizações diárias.
+
+#desenvolvedores #php #java #javascript
+
+ Link da notícia: https://t.co/2g2wymppl7
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@NDikkeboom Block mij ook please, Kafka the best
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@kunikaz4 ok but link to kafka porn 🤨
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Niet alleen de halve kamer, ook 90% van Nederland is KLAAR met die elitaire, totalitaire boeren-haters.
+
+Doe een ❤️ & RT als…
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@k16is HOLD ON I NEED TO DRAW TJIS
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafkasdaily: we need more Kafka official art because I can’t get over these https://t.co/erw54PmdQ9
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Un poco menos, sí has podido disfrutarlos en la maravillosa edición de @sextopisoed allá por 2011. Excelsa y cuidada a cargo de Niels Bokhoe y Marijke van Dorst.
+#FrankKafka https://t.co/7iMZiCOr6O https://t.co/XtYgFxIZ3t
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @nihoneho: now you can call Kafka sir too https://t.co/exHwrxc8w0
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ https://t.co/ClVVaStnxU
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @o_exacoustos: « Tu es mon propre moi, et mon moi je le torture de temps en temps, cela lui fait du bien, mais tu es mon moi le plus int…
+2023-05-13 21:39:05 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@KAFKA_Dev ❤
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @XTERcomic: Himeko & Kafka
+Honkai Star Rail https://t.co/HrIIrVFCot
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: Transactions Vs Analytics In #ApacheKafka. #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #Python #RStat…
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@moonboow_ kafka yaziyor tetiklendim
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング:15位❗ (ナイト＆週末セール)
+
+「［在庫限り］パンパース さらさらケア 風通しパンツ ビッグ (12-22kg)  144枚 (36枚×4パック)  4987176116482_BOX」
+メーカ:P&G
+
+価格:¥4,480(03:39)
+
+https://t.co/AlySa4GCDJ
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @_diilaaraaa: ..,öyle zaman olur ki odada yalnızken bile "yok oluverir" insan, bunun nedenleri çoktur, kişi yaşarken bile ölebilir.
+|F.…
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング：27位❗(CPU)
+
+「増設CPUボード (28C/ 8180)  スロット3、4用 N8101-7122」
+メーカ:NEC
+
+価格:¥3,820,300✨
+🔥売り切れ間近🔥(03:39)
+
+https://t.co/TT9rTKHSK1
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Niet alleen de halve kamer, ook 90% van Nederland is KLAAR met die elitaire, totalitaire boeren-haters.
+
+Doe een ❤️ & RT als…
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Miklilleoren: Both #dotnet and #Java have strong community support. Dotnet benefits from Microsoft's backing, providing extensive docum…
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @_ymr18: bark.
+#kafhime #himeko #kafka #HonkaiStarRail https://t.co/2ItE4jOKQ7
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @justone05716272: @KAFKA_Dev O waarom waarom deelt Bauke toch het artikel niet. Nou omdat het toevallig over lhbtiq en asiel gaat. Als s…
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}No need. I want to hear what you have to say, Kafka. https://t.co/WnxVY33aM7
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @NodejsAngularjs: How to Get Started Building Microservices with Node.js
+☞ https://t.co/OjMEpM5JKb
+
+#nodejs #javascript https://t.co/QHN…
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tom_w_keane: New and upcoming capabilities with Elastic Cloud (Elasticsearch)—An Azure Native ISV Service https://t.co/C9K3jsJfYK #clou…
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @XTERcomic: Himeko & Kafka
+Honkai Star Rail https://t.co/HrIIrVFCot
+2023-05-13 21:39:36 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: Learn Microsoft Power Apps! #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #Python #RStats #TensorFlow #…
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AmschelKavka: Just now I’ve been lying on the sofa for two hours and thinking of hardly anything but you.
+
+Franz Kafka, 1921.
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Kafka__444: これ中学生のときに描いたらしい https://t.co/msMuD3Cclm
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@cy_lucyka Cy en Mommy Kafka https://t.co/Pho71XuAx7
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}I published a video on how to find max element in an array in java. Check it out! 
+https://t.co/ZWOYKOHZ0h
+
+#java #code #programming #YouTuber #youtubechannel #codewithc
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @whooperjin: felt a strong kinship towards this guy who was just staring at the kafka shelve for a good ten minutes at the bookstore tod…
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Es solo por su estupidez que algunos pueden estar tan seguros de sí mismos 
+F Kafka
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: #Python #Programming #Books for Beginners and Experts! #BigData #Analytics #DataScience #IoT #IIoT #RStats #TensorFlow #Ja…
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @omimi65593751: @Kafka__444 この文章見た瞬間画材全部捨てそうになった
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@kanacchia lynx y yukong pero ponle que también tenía pensado guardar para silver o kafka 🫥
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: Learn Microsoft Power Apps! #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #Python #RStats #TensorFlow #…
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}sapphics. if all of them have at least one thing in common then its liking and loving women https://t.co/mgKv6RdwE4
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @magic_moon7nn: نکاتی درباره اصابت گلوله ساچمه‌ای
+#مهسا_امینی 
+《زن،زندگی،آزادی》
+https://t.co/MtUV1h2ktp
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-13 21:39:56 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Koffre3_arts: Boom! 
+#HonkaiStarRail  #スターレイル  #Kafka https://t.co/KYaYAYooP9
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: Best Books for Data Analytics in R. #BigData #Analytics #DataScience #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Java…
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}goosebumps n its not bcs my java chip frappe
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @masoq095: Kafka be looking different these days
+#honkaistarrail #chainsawman #Kafka https://t.co/aW84V37pQt
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}HARRY STYLES U R NASTY
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Y, hoy, Monteperdido gratis en el Kafka de #Valladolid
+
+Viva la programación cultural alternativa De San Pedro Regalado https://t.co/V1AiOA9Xrc
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@LeonBinding It was actually kinda easy for me since I had Bronya and Seele on my team, so no
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@AgustiHilary Intolerant groups are increasingly losing influence, all social media ustad who spread hatred between religious communities will disappear from Indonesia. Pancasila is a state ideology that cannot be disturbed by any understanding of radicalism.
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}ランキング:20位 (ベビー、キッズ、マタニティ)
+
+鼻水吸引器 公式 メルシーポット S-504 電動鼻水吸引器 電動 鼻吸い器 鼻水 ノズル チ......(03:40)
+
+https://t.co/5066J4isnV
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@gp_pulipaka Thanks for sharing the #ChatGPT Cheat-Sheet, @gp_pulipaka! It's a valuable resource for anyone interested in #BigData, #Analytics, #DataScience, #AI, and more. The link you provided will definitely come in handy for quick reference. 📚🚀 #MachineLearning #Python #CloudComputing
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@suouwrld i thought i dreamt this list bc i didnt think Kafka (HSR) and Kafka (Novelist) was real
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: #ComputerVision and #MachineLearning in Agriculture! #BigData #Analytics #DataScience #AI #IoT #IIoT #Python #RStats #Tens…
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @SplendahAI: Dinner Date with Kafka
+#AIイラスト #AIart #スターレイル https://t.co/TT2JbQVov7
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AmschelKavka: I wish you a great big garden and blue skies.
+
+Franz Kafka, 1921.
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @k16is: kafka girlboyfriend…. #kafhime https://t.co/Fa8uQVC7QP
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @diarykafka: hey hey, would love to find #hsrtwt moots!
+
+- current seele main
+- kafka and silver wolf admirer/wanter
+- tingyun and yukon…
+2023-05-13 21:40:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Swing Out Sister Java Jazz Festival 2009 https://t.co/cV4EpZfLKM a través de @YouTube
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gifhonkai: #Kafka #卡芙卡 #Blade #刃 #HonkaiStarRail #崩坏星穹铁道 https://t.co/K4aIZk01a4
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AmschelKavka: I wish you a great big garden and blue skies.
+
+Franz Kafka, 1921.
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @nymph1310: Dominated 🐕‍🦺
+
+#kafhime  #スターレイル    #Honkaistarrail   #Kafka #Himeko https://t.co/0Hbsoin4S9
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @katierosefuns: every single hour of studying is starting to feel more and more like kafka's diary entries. just. "unending torments" an…
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}𝒉m?   subtly  draconic  hues'  trained  focus  catching  glimpse  of  unmistakable  figure.   ❪  …  ❫   bewilderment  etched  ever  so  stoic  tiers;   her  presence  in  such  caotic  enviroment  quite  unforeseen. https://t.co/arG3SmaYWt
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Knock knock.
+Who's there?
+Recursion.
+Recursion who?
+Knock knock.
+
+#programming #programmingjoke #programminghumor #Python #javascript #Java
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: Data Analytics! #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @MigueGaspar: Supongo que el @TSJE_Py  explicó y mostró también el código fuente que @luismauro92 aseguró fue disponibilizado a todos en…
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @soufflebune: She's literally just so ☹️💖
+#Kafka #HonkaiStarRail #崩壊スターレイル https://t.co/LzRb8okviW
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @BeritaTeyvat: Mommy #Kafka #HonkaiStarRail #MMD #fanart https://t.co/OwJP1ujaa4
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}White women after binge watching greys anatomy (it’s worth it after the first 200 episodes) https://t.co/vdtwwpU6sW
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @W0rldWideJess: Jr. Full Stack Developer - Remote 
+
+@AOTTechnologies Canada
+
+Salary: $70,000
+
+- 1year of IT industry experience
+- Experi…
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@astasrealgf as long as you have cleanse the fight isn't hard tbh
+2023-05-13 21:40:40 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AmschelKavka: Just now I’ve been lying on the sofa for two hours and thinking of hardly anything but you.
+
+Franz Kafka, 1921.
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @MonaLee41142040: Love will find its way🪷
+💛💛💛🦅💛💛💛
+—————————
+At 40, Franz Kafka (1883-1924), who never married and had no children, was w…
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@ymikotts @chuuyabullets *siiighh* give it here. And the charger as well. https://t.co/a9wopEVMQ5
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @YuuShibaDesu: Thanks for 60,000 guys !! I draw Kafka🍑 from HKSR for you !! https://t.co/K3fmTj7gLi
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @masoq095: Kafka be looking different these days
+#honkaistarrail #chainsawman #Kafka https://t.co/aW84V37pQt
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tcell0: quick doodle #honkaistarrail #Kafka https://t.co/SinnaIsm5j
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @azumayua15: カフカ
+#スターレイル #カフカ #HonkaiStarRail📷 #Kafka https://t.co/nq15wJ5mQ1
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @k16is: kafka girlboyfriend…. #kafhime https://t.co/Fa8uQVC7QP
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@MonaLee41142040 How beautiful 💜
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Ecchisama_: Kafka from Star Rail
+Artist: @raw_egg_lent https://t.co/pv8ZQ5k2HN
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @PetaLatinoA: FRANZ KAFKA Y “LA MUÑECA VIAJERA”
+
+Kafka paseaba por el parque de Berlín cuando conoció a una pequeña que lloraba, porque…
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @YayaChanArtist: カフカ
+
+Programmed Tweet~✯
+
+#崩坏星穹铁道 #HonkaiStarRail #Kafka #カフカ #Honkai #yaya #anime #崩坏星穹铁道 https://t.co/UHk3bMEOuS
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @onasugar: kafka https://t.co/BsNlHblwc2
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Distrbeachboy: Kafka strip game part 4. Which is the last one. Warning: it is nsfw. But since you guys liked the previous ones a lot, I…
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Happy Saturday everyone! It’s a beautiful day. Gonna be a tad bit hot lol Got my nails done and trying out the new Java mint chip frap 😋 Have a great day everyone! 😊 https://t.co/xOxACllbDG
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ursica_v: カフカ
+#カフカ
+#Kafka
+#崩壊スターレイル
+#HonkaiStarRail https://t.co/fLppW32EEc
+2023-05-13 21:41:15 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@ppyuuingles KAFKA PICK UP THE PHONEEEEE😭😭😭😭😭😭😭😭
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@talionprinciple no im saving for kafka.. one day she will be mine
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @nearsisa: She asked for no pickles 😎
+#kafhime #kafka #himeko #HonkaiStarRail https://t.co/tM5zGBss7k
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@lyksaEXE You know what.. fair enough
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Niet alleen de halve kamer, ook 90% van Nederland is KLAAR met die elitaire, totalitaire boeren-haters.
+
+Doe een ❤️ & RT als…
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Leonie2814: 01 🦇 Kafka
+
+#カフカ(スターレイル) #Kafka #崩壊スターレイル https://t.co/uNv9iJBqaA
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @wawamachi: Kaf 
+#Kafka #honkaistarrail https://t.co/ZO0tWFe8nL
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}kafka layout https://t.co/M9IpTblHOj
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @MonaLee41142040: Love will find its way🪷
+💛💛💛🦅💛💛💛
+—————————
+At 40, Franz Kafka (1883-1924), who never married and had no children, was w…
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @YuuShibaDesu: Thanks for 60,000 guys !! I draw Kafka🍑 from HKSR for you !! https://t.co/K3fmTj7gLi
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@furelysias Yo me he quedado en el mundo 3, no consigo pasar al putisimo Guepard 😭
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: Data Analytics! #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: Data Analytics! #BigData #Analytics #DataScience #AI #MachineLearning #IoT #IIoT #PyTorch #Python #RStats #TensorFlow #Jav…
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @MigueGaspar: Supongo que el @TSJE_Py  explicó y mostró también el código fuente que @luismauro92 aseguró fue disponibilizado a todos en…
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Koffre3_arts: Boom! 
+#HonkaiStarRail  #スターレイル  #Kafka https://t.co/KYaYAYooP9
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}What the fuck did Java Baez just swing at
+2023-05-13 21:41:50 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd

@@ -1,0 +1,889 @@
+2023-05-14 00:01:23 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 19768 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-14 00:01:23 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-14 00:01:23 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springToKafkaDemo': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.config.SpringToConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-05-14 00:01:23 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-14 00:01:23 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.ms.spring_to_kafka.SpringToKafkaDemo required a bean of type 'com.microservices.config.SpringToConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.config.SpringToConfigData' in your configuration.
+
+2023-05-14 00:56:28 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 25244 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-14 00:56:28 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-14 00:56:28 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springToKafkaDemo': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ms.spring_to_kafka.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-05-14 00:56:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-14 00:56:28 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.ms.spring_to_kafka.SpringToKafkaDemo required a bean of type 'com.ms.spring_to_kafka.runner.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.ms.spring_to_kafka.runner.StreamRunner' in your configuration.
+
+2023-05-14 00:59:26 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 26972 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-14 00:59:26 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-14 00:59:27 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.486 seconds (JVM running for 2.965)
+2023-05-14 00:59:27 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-05-14 00:59:27 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-05-14 00:59:27 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-05-14 00:59:27 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-05-14 00:59:32 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafka_army: نکاتی درباره اصابت گلوله ساچمه‌ای
+#مهسا_امینی https://t.co/ZdOsvDBJd2
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @TsukijiTums: 8$ P*treon requests from this month's request stream!
+This month's lucky ladies are @Lunarpix's OC Violet and a stuffed Ka…
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Ruu_GI @t3ru__ @Jaerinka20 DONT BE LYING
+KAFKA NEVER SAID ANYTHING ABOUT THIS
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Ecchisama_: Kafka from Star Rail
+Artist: @raw_egg_lent https://t.co/DKRPHiwKAf
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tako10111: mreow #kafhime #Kafka #himeko https://t.co/hWzECRE4Ce
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @masoq095: Kafka be looking different these days
+#honkaistarrail #chainsawman #Kafka https://t.co/aW84V37pQt
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}cuando m salga kafka pido perdón x la persona en la q me convertire
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @scrumtuous: Being the big Java influencer I am, I decided to do something crazy.🤪
+
+I decided 2 learn Java!☕️
+
+And wow!😯Just a few lines…
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @zara_3969: カフカ👓
+#スターレイル #崩壊スタートレイル #HonkaiStarRail #Kafka https://t.co/JNgcHIgduR
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Importance of #DevOps Automation in 2021 - #Java Code Geeks - 2023 https://t.co/poLTaitd81
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Java is to JavaScript as ham is to hamster.
+
+ — Jeremy Keith
+
+#java #javascript
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@ggyu_kko you will get her !
+2023-05-14 01:00:08 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: #Jupyter Notebooks Using Colab! #BigData #Analytics #DataScience #AI #MachineLearning #NLProc #IoT #IIoT #Python #RStats #…
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Fruttekoek @Lauwke3 @vanranstmarc @KAFKA_Dev Ach, ach.
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}The #breadthFirst search #algorithm traverses through #graphs or #trees level by level, starting from the #rootnode. In contrast, the depth-first search algorithm #traverses #nodes branch by branch.
+
+Check it out here:
+
+https://t.co/IGqe3xhghH
+ https://t.co/IGqe3xhghH
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング:3位❗(今週の新着)
+
+「50cmアルミ羽根 三脚型 工業扇 CFF502TMA」
+メーカ:広電
+
+価格:¥12,800✨
+🔥売り切れ間近🔥(07:00)
+
+https://t.co/6kvkK5NHHg
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}ランキング:12位 (車、バイク、自転車)
+
+自転車ヘルメット 自転車 ヘルメット 女性用 おしゃれ 大人 帽子 おしゃれ ハット型ヘルメ......(07:00)
+
+https://t.co/VKbjhgqta4
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@stormriderqv God, I wished that were me.
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング：3位❗(グラフィックボード)
+
+「■GeForce GT 730搭載 PCI Express x16 (2.0) 対応 グラフィックボード Lowprofile対応 N730K-2GD3H/ LPV1」
+メーカ:MSI
+
+価格:¥10,600✨
+🔥売り切れ間近🔥(07:00)
+
+https://t.co/1ECWS8nT2T
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @calebyen: OK hai it's me, the english voice of Caelus/Masc MC in Honkai Star Rail! In def gonna stream the game tomorrow at 3 PM PST, a…
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @masoq095: Kafka be looking different these days
+#honkaistarrail #chainsawman #Kafka https://t.co/aW84V37pQt
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gp_pulipaka: #Jupyter Notebooks Using Colab! #BigData #Analytics #DataScience #AI #MachineLearning #NLProc #IoT #IIoT #Python #RStats #…
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@elysiabelovedz 🚩🚩🚩🚩🚩🚩
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@KAFKA_Dev Waarom zou ik het opnemen voor een van deze feeksen. Ik ben anti-diversiteit en ik ben anti-marxisme. 
+Het is leuk dat hun idiote diversiteits-beleid mensen als Kaag nu nadelen oplevert; maar ik was ook altijd al tegen het diversiteits-beleid. 
+
+Nu hebben we 2 problemen.
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @wawamachi: Kaf 
+#Kafka #honkaistarrail https://t.co/ZO0tWFe8nL
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @javinpaul: SAGA Design Pattern In Java Microservices with Example https://t.co/yM7QTqVG4Z https://t.co/7osA5Rkfmf
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @TsukijiTums: 8$ P*treon requests from this month's request stream!
+This month's lucky ladies are @Lunarpix's OC Violet and a stuffed Ka…
+2023-05-14 01:00:33 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Muni_Renca: 1/ 4 ☺️🏠Hoy es un día de alegrías. Cinco comités: 1 de Mayo, Balmaceda, Gladys Marín, La Java y Victoria de nuestra comuna…
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}We usually implement different algorithms to solve one problem and measure how efficient one is with respect to the other ones. https://t.co/LkfoaH70MA #java #coding #interview #programming #developer #amazon #algorithm #software #api #big-o
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @fuedicho: "Cualquiera que conserve la capacidad de ver la belleza no envejecerá nunca".
+Franz Kafka
+#Fuedicho https://t.co/kdm5yZY85z
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Ecchisama_: Kafka from Star Rail
+Artist: @raw_egg_lent https://t.co/pv8ZQ5k2HN
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @icedsoup_: i am not immune to women
+
+#HonkaiStarRail #kafka https://t.co/5VtDwFWA2D
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AmschelKavka: I wish you a great big garden and blue skies.
+
+Franz Kafka, 1921.
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@meijde1 @KAFKA_Dev Waar reageer je precies op?
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @harrytoyashiba0: I love her sm 😭😭😭 #kafka #honkaistarrail #kafstel https://t.co/RycroOUkxr
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}“I trace what I like” is what your bio should say 
+
+@ghouleo_ @KureNaiZ1 are the original artists you traced from https://t.co/3kjFxKsjnS
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@kmb42600 @SmokeyStack_ Tbh the differences between Java and Bedrock Development are almost too drastically different. I can't imagine a large-scale update breaking a basic datapack functionality and not being caught as early as possible and fixed in the next snapshot/pre-release.
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KureNaiZ1: I forgot to post this version
+
+#Kafka https://t.co/ZxfK5M59eM
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @zara_3969: カフカ👓
+#スターレイル #崩壊スタートレイル #HonkaiStarRail #Kafka https://t.co/JNgcHIgduR
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@QuantumSeele ᅠ
+
+ᅠ
+ᅠ
+
+Bye. 😒ᅠ
+
+ᅠ
+ᅠ
+
+ᅠㅤㅤㅤ
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KureNaiZ1: #Kafka ?
+
+#Honkaistarrail https://t.co/xWtiZSkeqs
+2023-05-14 01:00:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @scrumtuous: The Toughest Interview Question Ever?🤔
+
+87% of FAANG job seekers get it wrong!🤦‍♀️
+
+➡️In 5 words or less, explain the red '…
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Mojang puta fedida deixa eu compra só o minecraft java eu ja tenho o bedrock DESDE 2015
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @fuedicho: "Cualquiera que conserve la capacidad de ver la belleza no envejecerá nunca".
+Franz Kafka
+#Fuedicho https://t.co/kdm5yZY85z
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@FoxelTheFennic https://t.co/aSzNPawbkk
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @TsukijiTums: 8$ P*treon requests from this month's request stream!
+This month's lucky ladies are @Lunarpix's OC Violet and a stuffed Ka…
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafka_daily: NEW STELLARON HUNTER CHIBIS!!!!! GUYS PLEASE LOOK AT THEM https://t.co/RV5f9LHnCr
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@fishfishing12 Who Kafka?
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @anemovencos: #animetwt #mhatwt #gitwt #hsrtwt
+
+☆ she/her/they/them 24+
+☆ dang heng/blade/ kafka stan
+☆ dabi/ deku / jirou Stan
+☆ venti/…
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}☁️ Cloud native
+⚡ Energy efficient 
+ ↔️ Scalable
+Learn the benefits of running your #Elasticsearch workloads on #OCI Ampere A1: https://t.co/9BPktyDVDy https://t.co/lVQ6F2xoTn
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@salbedos once Bronya is acquired we saving for mother kafka https://t.co/V0p21d6FlG
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}☁️ Cloud native
+⚡ Energy efficient 
+ ↔️ Scalable
+Learn the benefits of running your #Elasticsearch workloads on #OCI Ampere A1: https://t.co/9dvUnszcZb https://t.co/zUjSFFCXqZ
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Chava_snr It is our style as usual :)
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Kafka_Astral Aaawww thank you sweetheart but I think I can prove you I deserve more than that ~
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AI_U_hellgate: 🐶
+#HonkaiStarRail #stelle #kafka https://t.co/hG7XRfveB7
+2023-05-14 01:01:24 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @cowboysampo: hii, i’m looking for #hsrtwt moots
+
+19 he/they
+himeko enjoyer, seele main :>
+future welt and kafka haver
+i love himbos and…
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Kafka_Astral Hehe~ I'm not cute honey, I'm just a futadom!!
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@g900ap @wierdduk @volkskrant @PubliekeOmroep Ik steun je.
+@frontaalnaakt trok een tijdje terug al een interessante historische parallel met de sympathieën van Wierd. 
+Dat is toch ook de Wierd die de neo-nazi's van Erkenbrand bezorgde jongeren vond? 
+https://t.co/i1rRDfAhu4
+/
+https://t.co/49Uv6dClei
+/
+https://t.co/lhvdwM9712 https://t.co/ycqaypnXaE
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tako10111: mreow #kafhime #Kafka #himeko https://t.co/hWzECRE4Ce
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}the way kafka smiles after himeko calls her stellaron hunter just knowing himeko is faking hating her and they’re actually gfs https://t.co/ZyfIe9XDG4
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@ani_obsessive Not so easy to watch something this kafkaesque
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @brokuroos: I just love how much fun Kafka has in battle, a special type of confidence only reserved for her.. https://t.co/doptd33sVi
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@kmb42600 @SmokeyStack_ Hell, They released a bug fix patch to 23w13a_or_b to fix multiple crashes & bugs.
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tako10111: mreow #kafhime #Kafka #himeko https://t.co/hWzECRE4Ce
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@brokuroos i got kafka on my phone
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Myth1cArts: "Bang."
+#Kafka  #fanart #ArtistOnTwitter #HonkaiStarRail https://t.co/sNKfeYuvyf
+2023-05-14 01:01:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @papa_kektus: shopping trip (2)
+#HonkaiStarRail #kafstel #kafka #stelle https://t.co/ZT1QNwYweK
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @papa_kektus: shopping trip (2)
+#HonkaiStarRail #kafstel #kafka #stelle https://t.co/ZT1QNwYweK
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Axylon1: The Hunter - Kafka 🎻
+
+#Kafka #HonkaiStarRail https://t.co/pU7YKyyla0
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @minecraft_fra: Une seed exceptionnelle vous attend pour établir votre base, entourée de majestueuses montagnes enneigées. 🗻
+
+🌱 Seed : 3…
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}“You have two moms ?? “ 
+
+If so , that’s amazing ✨ https://t.co/B0ElkZzCEr
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @papa_kektus: shopping trip (2)
+#HonkaiStarRail #kafstel #kafka #stelle https://t.co/ZT1QNwYweK
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gifhonkai: #Kafka #卡芙卡 #Blade #刃 #HonkaiStarRail #崩坏星穹铁道 https://t.co/K4aIZk01a4
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Wilaxox: 「  Redoing  Pinned」
+—✨looking for #anitwt #hsrtwt #genshintwt mutuals 
+
+ – she/her, 21
+— future Blade/Kafka main
+ –  main Bron…
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Knock knock.
+Who's there?
+Recursion.
+Recursion who?
+Knock knock.
+
+#programming #programmingjoke #programminghumor #Python #javascript #Java
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @elysiabelovedz: my fav power couple hehe ♡
+#HonkaiStarRail #blkedit #Kafka #Blade https://t.co/fZMVcJswRV
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ymikotts: K-Kafka...~~~ not in front of my mutuals!..n-ngh... mmmn...! d-dont do it inside!!… please..~ gasp ahh!~ Kafka… ngh… im such…
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Joshua Bassett Confession #2: “Last month Josh came into my work and ordered a grande Java chip frappe with oat milk and no whipped cream. Dairy free king.”
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @misaka12003: 🔞💜new waifu Kafka💜 #honkaistarrail  #Kafka #崩壊スターレイル https://t.co/tdKzD18gZH
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@ani_obsessive Not so easy to find something this kafkaesque
+2023-05-14 01:02:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Así que ya sabes.....
+
+💎"Notando que lo estaba amenazando se puso en medio de ambos"
+
+💎Eeh basta.... Kafka... El no está a tu nivel y no lo provoques.....tendrás suerte si no llama a su tío ..
+
+🕶️Acaso aún necesitas de mayores para conseguir lo que quiere ... Cachorro de papi..
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @masoq095: Kafka be looking different these days
+#honkaistarrail #chainsawman #Kafka https://t.co/aW84V37pQt
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @papa_kektus: shopping trip (2)
+#HonkaiStarRail #kafstel #kafka #stelle https://t.co/ZT1QNwYweK
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @SeOL__________: 카프히메 팬스가트레 ^-^
+#kafka #himeko #kafhime #honkaistarrail https://t.co/tp5k78k4nS
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Distrbeachboy Eheh. https://t.co/KX0ivO8kXe
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Raven_SNG: 😳 Ma'am
+#Kafka #HonkaiStarRail #hsr #hsrfanart https://t.co/tEBCnqnvG6
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Lana00469742 @KAFKA_Dev Op jou reactie ben je nu zo dom.
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @nymph1310: Dominated 🐕‍🦺
+
+#kafhime  #スターレイル    #Honkaistarrail   #Kafka #Himeko https://t.co/0Hbsoin4S9
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@MirkoSone_ss @cubesbutlittle No me han arrastrado en si >:c aun No pero es spam es real de Kafka
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ursica_v: カフカ
+#カフカ
+#Kafka
+#崩壊スターレイル
+#HonkaiStarRail https://t.co/fLppW32EEc
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gifhonkai: #Kafka #卡芙卡 #HonkaiStarRail #崩坏星穹铁道 https://t.co/CwYBy0uTto
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tilingerrr: Kafka doing a little trolling. But come on guys he looks kinda like a shetland pony with that cut #blade #kafka #stellaronh…
+2023-05-14 01:02:52 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @_Jewel_Art_: Thank you all so much for 100 followers!! Here’s a Kafka drawing I rendered on a 13 hour flight (while I wasn’t sleeping a…
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @onasugar: kafka https://t.co/BsNlHblwc2
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @TsukijiTums: 8$ P*treon requests from this month's request stream!
+This month's lucky ladies are @Lunarpix's OC Violet and a stuffed Ka…
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @MonaLee41142040: Love will find its way🪷
+💛💛💛🦅💛💛💛
+—————————
+At 40, Franz Kafka (1883-1924), who never married and had no children, was w…
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❤️❤️❤️ https://t.co/mB9UWHoVxe
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @cherrymeowpls: After the hunt
+.
+#HonkaiStarRail  #Blade #Kafka #blafka #刃フカ https://t.co/mSe8VzuDQB
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング:4位❗(今週の新着)
+
+「50cmアルミ羽根 壁掛け型 工業扇 CFF502WMA」
+メーカ:広電
+
+価格:¥12,800✨
+🔥売り切れ間近🔥(07:03)
+
+https://t.co/ufE1SKXvVv
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KiBOOOUU: Mommy
+#Kafka #honkaistarrailfanart https://t.co/1NExXK6zjk
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング：4位❗(グラフィックボード)
+
+「■ Radeon RX 6700 XT MECH 2X 12G OC Radeon-RX-6700-XT-MECH-2X-12G-OC」
+メーカ:MSI
+
+価格:¥108,900✨
+🔥売り切れ間近🔥(07:03)
+
+https://t.co/a1DVuhm6yj
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Java_pleb You're going far into sophistry and off topic while chopping off a main part of my sentence to break and funnel the context.
+
+What the standards are is another discussion about rules and laws of a society, not the individual's morals in upholding those standards equally.
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Koffre3_arts: Boom! 
+#HonkaiStarRail  #スターレイル  #Kafka https://t.co/KYaYAYooP9
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @calebyen: OK hai it's me, the english voice of Caelus/Masc MC in Honkai Star Rail! In def gonna stream the game tomorrow at 3 PM PST, a…
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@constantgemini CACKLING
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tilingerrr: Kafka doing a little trolling. But come on guys he looks kinda like a shetland pony with that cut #blade #kafka #stellaronh…
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Niet alleen de halve kamer, ook 90% van Nederland is KLAAR met die elitaire, totalitaire boeren-haters.
+
+Doe een ❤️ & RT als…
+2023-05-14 01:03:31 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @PiRevolutionX: ✨ Pioneer Indonesia is again holding a Pi Network seminar in West Java with music and dance! ✨
+
+World Pioneer, how about…
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @fuedicho: "Cualquiera que conserve la capacidad de ver la belleza no envejecerá nunca".
+Franz Kafka
+#Fuedicho https://t.co/kdm5yZY85z
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@calebyen I baked cake for mom and granny :)
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @papa_kektus: shopping trip (2)
+#HonkaiStarRail #kafstel #kafka #stelle https://t.co/ZT1QNwYweK
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Niet alleen de halve kamer, ook 90% van Nederland is KLAAR met die elitaire, totalitaire boeren-haters.
+
+Doe een ❤️ & RT als…
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@FutaUsagiyama "Ara thats a bold proclaim"
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @UltraBigNova: Kafka caught you following her, now you must pay the consequences. 💦👙🌴
+
+Commission for @CapnXero . https://t.co/uZiDLQz99h
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @TsukijiTums: 8$ P*treon requests from this month's request stream!
+This month's lucky ladies are @Lunarpix's OC Violet and a stuffed Ka…
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Niet alleen de halve kamer, ook 90% van Nederland is KLAAR met die elitaire, totalitaire boeren-haters.
+
+Doe een ❤️ & RT als…
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}essa galera comparando a kafka com a makima vou começar a odiar a kafka por causa desse povinho
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @magic_moon7nn: نکاتی درباره اصابت گلوله ساچمه‌ای
+#مهسا_امینی 
+《زن،زندگی،آزادی》
+https://t.co/MtUV1h2ktp
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}its 6am and im thinking of cosplaying kafka if we hit the stretch goal https://t.co/jhzxEWQuhs
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @LiveOverflow: Minecraft plugins can be infected by malware. @TheMeinerLP analysed a malicious plugin and created a detailed step-by-ste…
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @TsukijiTums: 8$ P*treon requests from this month's request stream!
+This month's lucky ladies are @Lunarpix's OC Violet and a stuffed Ka…
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:04:11 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@reonagisucksass yessss one of my fave ults tbh 😣 alongside kafka's
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @miiksster: a love immortal such as mine #honkaistarrail #kafka https://t.co/T3p4A1Ys6X
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Accident on Nicoll Highway (towards Guillemard) after Java Road. Avoid left lane
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @azumayua15: カフカ
+#スターレイル #カフカ #HonkaiStarRail📷 #Kafka https://t.co/nq15wJ5mQ1
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @PetaLatinoA: FRANZ KAFKA Y “LA MUÑECA VIAJERA”
+
+Kafka paseaba por el parque de Berlín cuando conoció a una pequeña que lloraba, porque…
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @PetaLatinoA: FRANZ KAFKA Y “LA MUÑECA VIAJERA”
+
+Kafka paseaba por el parque de Berlín cuando conoció a una pequeña que lloraba, porque…
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@AlevAloysius @Ariekanarie67 @vanranstmarc @KAFKA_Dev Arie er is 9 maanden voordat je geboren werd blijkbaar wat misgegaan met kapotje van de Marokkaan die je moeder aan het knallen was.  Jouw woorden.  Tact Vol bagger
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Raven_SNG: 😳 Ma'am
+#Kafka #HonkaiStarRail #hsr #hsrfanart https://t.co/tEBCnqnvG6
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Na vragen van Omtzigt & van Houwelingen gister werd duidelijk! Heb je vaccinatie-schade? Is er NIEMAND aansprakelijk en kun…
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@srprogrammer Todo mundo estudando Java.
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tkb_ke: Blade and Kafka told me they're married
+#Blade #Kafka #blafka #HonkaiStarRail https://t.co/EZdAUUD6yE
+2023-05-14 01:04:45 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @MonaLee41142040: Love will find its way🪷
+💛💛💛🦅💛💛💛
+—————————
+At 40, Franz Kafka (1883-1924), who never married and had no children, was w…
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @nearsisa: She asked for no pickles 😎
+#kafhime #kafka #himeko #HonkaiStarRail https://t.co/tM5zGBss7k
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@KnK_Shiki Nah briv that's actually me if you look closely
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @heavritss: “it’s Kafka” 
+#HonkaiStarRail   #Kafka https://t.co/uLvPoJESdN
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Falta mucho para kafka 😿 https://t.co/JLzWxBxz8Z
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @huajiuhuajiu: The Hunter
+#HonkaiStarRail #Kafka https://t.co/INxIuFK5am
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@vini_ball https://t.co/HPpLJvHuyf
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Niet alleen de halve kamer, ook 90% van Nederland is KLAAR met die elitaire, totalitaire boeren-haters.
+
+Doe een ❤️ & RT als…
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @W0rldWideJess: Jr. Full Stack Developer - Remote 
+
+@AOTTechnologies Canada
+
+Salary: $70,000
+
+- 1year of IT industry experience
+- Experi…
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Java_pleb You're going far into sophistry and off topic while chopping off a main part of my sentence to break and funnel the context into BS.
+
+What the standards are is another discussion about rules and laws of a society, not the individual's morals in upholding those standards equally.
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @nearsisa: She asked for no pickles 😎
+#kafhime #kafka #himeko #HonkaiStarRail https://t.co/tM5zGBss7k
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @brokuroos: I just love how much fun Kafka has in battle, a special type of confidence only reserved for her.. https://t.co/doptd33sVi
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@bladielilies thats so real of you, i cant wait for blade to be playable his ult looks amazing aswell
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Minecraft (マインクラフト): Java & Bedrock Edition | オンラインコード版 https://t.co/zwURQm726A via @amazon
+2023-05-14 01:05:07 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@anemovencos thanks for the follow names darren hows your day going
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}ランキング:13位 (車、バイク、自転車)
+
+ランキング1位獲得 ドライブレコーダー 前後2カメラ ユピテル DRY-TW7000c 超広角 あおり運......(07:05)
+
+https://t.co/3U5dbsZvhr
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @papa_kektus: 跟麻麻逛街 #HonkaiStarRail #kafstel #kafka #stelle https://t.co/PVUBKo2HjO
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafksvlain: hi !! looking 4 #hsrtwt #genshintwt #pjsktwt moots 
+
+- future kafka main (real)
+- I play genshin, itto main, ar55, pjsk eng…
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @icedsoup_: i am not immune to women
+
+#HonkaiStarRail #kafka https://t.co/5VtDwFWA2D
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @W0rldWideJess: Jr. Full Stack Developer - Remote 
+
+@AOTTechnologies Canada
+
+Salary: $70,000
+
+- 1year of IT industry experience
+- Experi…
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@ani_obsessive “Sometimes you never know what’s under your very own roof”
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @siirsozu: ''Çocukların çocuk olmaya vakti bile yok.''
+
+Franz Kafka https://t.co/kcV22ot3Es
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@elysiabelovedz RAA RA RA RAAAA
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafkasdaily: she can pull off anything Kafka is so crazy for this https://t.co/3Kqx1w3KIQ
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @elysiabelovedz: my fav power couple hehe ♡
+#HonkaiStarRail #blkedit #Kafka #Blade https://t.co/fZMVcJswRV
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}que animação foda de maluca https://t.co/Ou6rfOb5ov
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @fuedicho: "Cualquiera que conserve la capacidad de ver la belleza no envejecerá nunca".
+Franz Kafka
+#Fuedicho https://t.co/kdm5yZY85z
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}素晴らしかったです。ぜひとも読んでいただきたい。 https://t.co/pEMGm6uXAy
+2023-05-14 01:05:30 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tkb_ke: Blade and Kafka told me they're married
+#Blade #Kafka #blafka #HonkaiStarRail https://t.co/EZdAUUD6yE
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Lanhacy: kafka & himeko ✨ https://t.co/CQbvdqsdCN
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @YayaChanArtist: カフカ
+
+Programmed Tweet~✯
+
+#崩坏星穹铁道 #HonkaiStarRail #Kafka #カフカ #Honkai #yaya #anime #崩坏星穹铁道 https://t.co/UHk3bMEOuS
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @nearsisa: She asked for no pickles 😎
+#kafhime #kafka #himeko #HonkaiStarRail https://t.co/tM5zGBss7k
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@elysiabelovedz THEY LOOK SI COOL IM SJAKING IN FEAR
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafkasdaily: she can pull off anything Kafka is so crazy for this https://t.co/3Kqx1w3KIQ
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @fuedicho: "Cualquiera que conserve la capacidad de ver la belleza no envejecerá nunca".
+Franz Kafka
+#Fuedicho https://t.co/kdm5yZY85z
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}this is why i love franz kafka he gets it https://t.co/WCgpQu93Te
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @MonaLee41142040: Love will find its way🪷
+💛💛💛🦅💛💛💛
+—————————
+At 40, Franz Kafka (1883-1924), who never married and had no children, was w…
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@RuuddeNijs1 @thanquol88 @KAFKA_Dev Het grappige is dat ruud daadwerkelijk denkt dat dit een goede comeback met een gotcha 😂😂
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @elysiabelovedz: my fav power couple hehe ♡
+#HonkaiStarRail #blkedit #Kafka #Blade https://t.co/fZMVcJswRV
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング:5位❗(今週の新着)
+
+「25cmアルミ羽根 据置型 ミニ工業扇 CFF252DMAA」
+メーカ:広電
+
+価格:¥6,480✨
+🔥売り切れ間近🔥(07:06)
+
+https://t.co/2UWje8elMI
+2023-05-14 01:06:10 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング：5位❗(グラフィックボード)
+
+「■ASRock RX6600 XT Challenger ITX 8G RX6600XT-CLI-8G」
+メーカ:ASRock
+
+価格:¥86,900✨
+🔥売り切れ間近🔥(07:06)
+
+https://t.co/Ev7jViEpkN
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@AzagraMac @ricardoredo La máquina virtual de Java. Bueno como virtualización puede llegar a tener su similitud con el subsistema Linux como capa de abstracción que implementó Microsoft, con todas sus diferenciaciones.
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}https://t.co/VK6bCm5PcR Developer  Connectionphase Upto 3 years https://t.co/QiiuVEviXL
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@beaconofstars ah now all you need is Kafka to re-enact that one ao3 illustration
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @TheDonRaab: Blog Series: The missing Java data structures no one ever told you about
+
+1⃣ If your only tool is a Map, lookout for nulls…
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@painfields EXACTLY
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@aeomie Kafka guaranteed...?
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@KAFKA_Dev Vooral van deze galbak!🤮🤮
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Koffre3_arts: Boom! 
+#HonkaiStarRail  #スターレイル  #Kafka https://t.co/KYaYAYooP9
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}[特価]  05/14 07:06 Minecraft (マインクラフト): Java & Bedrock Edi
+https://t.co/ZaWjSPEFys
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Koffre3_arts: Boom! 
+#HonkaiStarRail  #スターレイル  #Kafka https://t.co/KYaYAYooP9
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}luocha my love and Kafka my WIFE
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Kafka_mommy Thank you ^^
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @PetaLatinoA: FRANZ KAFKA Y “LA MUÑECA VIAJERA”
+
+Kafka paseaba por el parque de Berlín cuando conoció a una pequeña que lloraba, porque…
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@bafflled 💯💯💯💯
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Muni_Renca: 1/ 4 ☺️🏠Hoy es un día de alegrías. Cinco comités: 1 de Mayo, Balmaceda, Gladys Marín, La Java y Victoria de nuestra comuna…
+2023-05-14 01:07:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@MrBlackOG The days of Java and Symbian phones.
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @studio_kafka: TVアニメ「魔法使いの嫁 SEASON2」 
+第6話『Better bend than break.』 
+ご視聴ありがとうございました🌟 
+今週はシルキーを見上げるルツ＆ウィル・オー・ウィスプのイラストをお届け！  
+
+◆Illustrate…
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}i'm gonna try to beat kafka (affectionately) with them
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Bek_Mirahmedov https://t.co/LsnuqOCKDL
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@slimkimmyjj @Kim70654020 @CynthiaKinyera @pierrefleury_ Nice Kafka trap
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}O inferno que Java foi no técnico sinceramente me deixou paciente com qualquer linguagem https://t.co/tbLvGIIR7U
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ppyuuingles: #kafka makima-ish drip 
+#hsr #honkaistarrail https://t.co/4geyJUdZdq
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @PetaLatinoA: FRANZ KAFKA Y “LA MUÑECA VIAJERA”
+
+Kafka paseaba por el parque de Berlín cuando conoció a una pequeña que lloraba, porque…
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @TsukijiTums: 8$ P*treon requests from this month's request stream!
+This month's lucky ladies are @Lunarpix's OC Violet and a stuffed Ka…
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}ドズル社ランド  Java版だから
+遊び行けないんだけどさ？
+こびと図鑑に、それぞれのアスレ
+動画や配信見たりして
+楽しそうだなぁと思いながら
+Twitterの写真見て、
+密かに楽しんでた…w
+ #ドズル社ランド2023 
+ #みんな楽しそうで良き
+ #でも迷惑かけちゃダメだぞ
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Mihanchann: #Kafka 
+#カフカ
+#HonkaiStarRail https://t.co/5OPfQgbWtt
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@KAFKA_Dev Hahahaha... In dit geval: Kaag is een top vrouw. Bleerbekje uitnodigen, leeg laten lopen met onzin en weer afserveren. Hoe je er netjes voor zorgen dat mevrouw zichzelf voor paal zet... Nou zo dus...
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @k16is: kafka girlboyfriend…. #kafhime https://t.co/Fa8uQVC7QP
+2023-05-14 01:07:58 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @siirsozu: ''Çocukların çocuk olmaya vakti bile yok.''
+
+Franz Kafka https://t.co/kcV22ot3Es
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}// Yo también quiero otp con una Himeko y sufro y lloro todas las noches porque o son lesbianas (que yo también lo sería por Kafka) o ven a Welt como su abuelo
+
+*se quedaba en el rincón de las otps no valoradas con su welthime, su dainkae y su rimlaine* https://t.co/BbrQL0HWAE
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Hi friends! My name is ven  I’m new to #Anitwt #hsrtwt
+And #gitwt 
+- 24+
+- she/her and they/them
+-   mha want more animes
+-  cyno, venti and tighnari stan
+- blade/ Dan and kafka stan
+- I follow back
+- Like & rt so more people can see this please ❤️
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @RichardHaass: Turkey reportedly imprisons more of its journalists than any country in the world. It is rich as in Kafka-esque that we a…
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@PiRevolutionX I buy Pi at very good rate
+DM if you're interested only if you've done your KYC
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @palobomsz: O inferno que Java foi no técnico sinceramente me deixou paciente com qualquer linguagem
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ppyuuingles: #kafka makima-ish drip 
+#hsr #honkaistarrail https://t.co/4geyJUdZdq
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@ohimesamadesuwa I’d love to join you guys one day once I know you guys better 💜💜
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Koffre3_arts: Boom! 
+#HonkaiStarRail  #スターレイル  #Kafka https://t.co/KYaYAYooP9
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Muni_Renca: 1/ 4 ☺️🏠Hoy es un día de alegrías. Cinco comités: 1 de Mayo, Balmaceda, Gladys Marín, La Java y Victoria de nuestra comuna…
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@troubledtaro ok yeah when you put it like that im normal again 🥺
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}AWS Lambda SnapStartによるJava Functionの高速化 https://t.co/Nwmm5i48be
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:08:48 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@slimkimmyjj @Kim70654020 @CynthiaKinyera @pierrefleury_ Nice Kafka trap. Yh he's a straight man, ofc he's going to oppose a negative generalisation about straight men. What was your point here?
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @onasugar: kafka https://t.co/BsNlHblwc2
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @nymph1310: Dominated 🐕‍🦺
+
+#kafhime  #スターレイル    #Honkaistarrail   #Kafka #Himeko https://t.co/0Hbsoin4S9
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kavehlune: kafka https://t.co/LObgfiJhb3
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング:6位❗(今週の新着)
+
+「25cmアルミ羽根 三脚型 ミニ工業扇 CFF252TMAA」
+メーカ:広電
+
+価格:¥6,480✨
+🔥売り切れ間近🔥(07:09)
+
+https://t.co/v5HUQKm0gY
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Deze dappere vrouw verstoorde de speech van Kaag en vertelde Kaag & een zaal vol D66-tuig ff de WAARHEID over gender-waanzin…
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング：6位❗(グラフィックボード)
+
+「■ZOTAC GAMING GeForce RTX 3070 Ti Trinity OC ZTRTX3070TITRINITYOC-8GB/ ZT-A30710J-10P」
+メーカ:ZOTAC
+
+価格:¥106,500✨
+🔥売り切れ間近🔥(07:09)
+
+https://t.co/E9ODfTaRuh
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @MonaLee41142040: Love will find its way🪷
+💛💛💛🦅💛💛💛
+—————————
+At 40, Franz Kafka (1883-1924), who never married and had no children, was w…
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}(Java)
+for (int i = 0; i < 26; i++) {
+if (//特定の文字列がきたら) {
+continue;
+}
+char ch = (char) (i + 'a');
+// 文字の判定に続く
+}
+
+お作法的に良いのかなぁ？
+
+提出 #41402038 - パナソニックグループプログラミングコンテスト2023（AtCoder Beginner Contest 301） https://t.co/qtDJXkb6H2
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AmschelKavka: Just now I’ve been lying on the sofa for two hours and thinking of hardly anything but you.
+
+Franz Kafka, 1921.
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @tkb_ke: Blade and Kafka told me they're married
+#Blade #Kafka #blafka #HonkaiStarRail https://t.co/EZdAUUD6yE
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kavehlune: kafka https://t.co/LObgfiJhb3
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @PadmashreeJha: Knock knock.
+Who's there?
+Recursion.
+Recursion who?
+Knock knock.
+
+#programming #programmingjoke #programminghumor #Pytho…
+2023-05-14 01:09:47 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @masoq095: Kafka be looking different these days
+#honkaistarrail #chainsawman #Kafka https://t.co/aW84V37pQt
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Dapper skin 🥳
+(Compatible with Java + Bedrock)
+
+Like + RT to help this grow C:
+Check thread for the link ⬇️
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@thejavawitch @montyre21 @Zegdie @Entium8 @skipmav @RDog861 @45Gigi24 @LsgaMike @taxfreeok @MagaFlgrl @mcleary55 @Lauria1960 @YvonneG95 @Corgi_MAGA @poarch_mike @CL4WS_OUT @kung_fu_jedi @CreasonJana @TrumpGirl1971 @SamChamp69 @Jothedeplorable @bassmaster1954 @HyfeLukeDawg91 Thank you Java 😊 Much appreciated 😊 Followed all Retweeted and Liked I Follow Back All Patriots 🇺🇸🇺🇸🇺🇸🇺🇸 Make sure you are following @thejavawitch
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AmschelKavka: I wish you a great big garden and blue skies.
+
+Franz Kafka, 1921.
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Nihimbity: ㅤ
+
+             𝐋𝐄𝐀𝐊𝐄𝐃 𝐕𝐈𝐃𝐄𝐎
+
+     Unfortunately for Kafka,
+     there's  no  place  where
+     no one knows her. 😔💢
+
+     T…
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}miko wants moots ??
+
+– they/them , 08' 
+– kny jjk csm bsd dn bd ons + lots more
+– txt lsf bts rv svt xg twice + more
+– hsr & genshin 
+– i <3 kafka klee jing yuan 
+ like / rt for moots !
+
+#hsrtwt #genshintwt #kpoptwt https://t.co/wCEs5MaFOv
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Não é mais ficção: máquinas inteligentes colocam humanidade em ...
+
+Fique por dentro das notícias! Siga @Infodeveloperbr. Atualizações diárias.
+
+#desenvolvedores #php #java #javascript
+
+ Link da notícia: https://t.co/gxyZ2ZGCGz
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@youarepunk @Veremos17 Vamos! Que más o menos es como decir...  por mí como si te compras un bosque  y te pierdes 😂🤣😂
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @serafineart1001: Kafka 10 min sketch
+#honkaistarrailfanart https://t.co/Ai0Yt0p7cE
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @azumayua15: カフカ
+#スターレイル #カフカ #HonkaiStarRail📷 #Kafka https://t.co/nq15wJ5mQ1
+2023-05-14 01:10:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafka_daily: NEW STELLARON HUNTER CHIBIS!!!!! GUYS PLEASE LOOK AT THEM https://t.co/RV5f9LHnCr
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kaiserglacier: Courtesy of Kafka's ropes.
+
+#kafhime #himeko #kafka #HonkaiStarRail #崩壊スターレイル https://t.co/nvVHbwoWdx
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Do you have development experience with C#, Java, or other modern programming language?  If so, we want to meet you! Apply now to be our next  Principal Software Engineer: https://t.co/LO5vAnRvUW #PersonalDevelopment
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}🦄 SoFi is hiring Staff Software Engineer 
+
+🛖 #remote #wfh 
+💪 #java #aws #spring 
+
+#tech #softwareengineer #jobs 
+https://t.co/f14brCiHiL
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}✋ Moveworks is hiring Software Engineer 
+
+💰 USD 100k-249k 
+🌇 Mountain View, CA 
+💪 #Infrastructure #elasticsearch #go #golang #machinelearning 
+
+#tech #softwareengineer #jobs 
+https://t.co/zofaeSxEPR
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}ランキング:14位 (車、バイク、自転車)
+
+サンシェード 日よけ 車用 折りたたみ傘 傘式 フロントガラス フロントサンシェード 8層加......(07:10)
+
+https://t.co/RBJdBydQj7
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Link 🥳
+https://t.co/qgH5dU5VJP
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @gripologies: hey not new to twt but new to hsrtwt :). looking for #hsrtwt moots !!
+
+★ he/him 18
+★ tbl36 sushang + welt main (america se…
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ArmsOut4MrTrout: I love Rana from Minecraft!! She is a removed mob from Indev 0.31 Java Edition. I have been meaning to draw her for a…
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@KAFKA_Dev Wat is dit? Kafka doet een stapje buiten de witte deur?
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}#kafka 🐱 https://t.co/X0wFZlZ3k9
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}As a Cyber security, hacking is easy, 
+DM to Recover or Hack accounts and missing phones. #gmailhack
+#gmaildown #hacked #Hacking #hackaccount #icloud #facebookdown #imessage #ransomware #snapchat #snapchatsupport #snapchatleak #hacking #discord #XboxSeriesX #XboxShare #NFT #Java https://t.co/HtFN8E8PYK
+2023-05-14 01:10:42 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @NueBunny: Kafka x Makima 💜
+#HonkaiStarRail https://t.co/vx7NWAiA2P
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @papa_kektus: shopping trip (2)
+#HonkaiStarRail #kafstel #kafka #stelle https://t.co/ZT1QNwYweK
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @YuuShibaDesu: Thanks for 60,000 guys !! I draw Kafka🍑 from HKSR for you !! https://t.co/K3fmTj7gLi
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @k16is: hc kafka loves animals but animals Hate Her most of the time. If she gets a pet cat the cat will take over her house and then ki…
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Ze vertrokken vanwege de toeslagen-misdaad maar gingen daarna gewoon verder. Ruim 2000 kinderen verdwenen. Nu blijkt dat er…
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Nihimbity: ㅤ
+
+             𝐋𝐄𝐀𝐊𝐄𝐃 𝐕𝐈𝐃𝐄𝐎
+
+     Unfortunately for Kafka,
+     there's  no  place  where
+     no one knows her. 😔💢
+
+     T…
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@ArcadeLoverX The point I’m trying to make and you keep dancing around is that morals are a man made thing and are contingent upon a societies beliefs about human nature. Concepts of good and evil are interpreted differently. There is no rule book in nature so humans are free to decide.
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Delicious_brain: She can have my ass honkai star RAILED
+ #崩壊スターレイル #honkaistarrail #Kafka https://t.co/wHa4qfaRhq
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@iamnehanupur Thats amazing! Which YouTube series are you following? 👀
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @la_anfi: Avión bombardero en picado Aichi D3A1 embarcado en portaaviones de La Armada Imperial Japonesa.Sobrevolando la isla Indonesa d…
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:11:12 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@SUPERWHXRES Kafka waifu💘
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @PetaLatinoA: FRANZ KAFKA Y “LA MUÑECA VIAJERA”
+
+Kafka paseaba por el parque de Berlín cuando conoció a una pequeña que lloraba, porque…
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Chung_Bezerra @FulanoTL @comunidademc não é, por mais incrivel que pareça, o bedrock faz a mão mais para baixo
+
+Bedrock////////Java https://t.co/wkgMASNxqf
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Ecchisama_: Kafka from Star Rail
+Artist: @raw_egg_lent https://t.co/pv8ZQ5k2HN
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @hews__: Happy mothers day to kafka https://t.co/g9W3m0dJSS
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@KAFKA_Dev Ook in scène gezet. #Kaag regisseert alles. Denk je werkelijk dat een indringer zo maar een podium krijgt? Think twice! #D66
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Niet alleen de halve kamer, ook 90% van Nederland is KLAAR met die elitaire, totalitaire boeren-haters.
+
+Doe een ❤️ & RT als…
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}You know what screw needing Serval in my life, I need Natasha and Kafka as well. 
+
+I want all 3 of them in my life
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Fazer agendamento no Java com Sql é pura maluquice na moral por isso que odeio tudo que é de Back end 🤡
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}No final das contas aprendi a usar banco não relacional
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafka_daily: NEW STELLARON HUNTER CHIBIS!!!!! GUYS PLEASE LOOK AT THEM https://t.co/RV5f9LHnCr
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}kafka inlove with stelle ik we all do
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafka_daily: NEW STELLARON HUNTER CHIBIS!!!!! GUYS PLEASE LOOK AT THEM https://t.co/RV5f9LHnCr
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @read_tower: ♜ TOWER VOL. 1: END ♜
+MAY 15.
+https://t.co/rRIJEPcSaH
+200+ pages of trouble and discomfort. Annihilation, survival, nostalg…
+2023-05-14 01:12:06 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @doormatsu: ME WHEN IM DOMINATED 
+#KafkaStelle #Kafka #honkaistarrail https://t.co/ULqBKFznbR
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング:7位❗(今週の新着)
+
+「25cmアルミ羽根 壁掛け型 ミニ工業扇 CFF252WMAA」
+メーカ:広電
+
+価格:¥6,480✨
+🔥売り切れ間近🔥(07:12)
+
+https://t.co/r9bsw7PILI
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @anemovencos: Hi friends! My name is ven  I’m new to #Anitwt #hsrtwt
+And #gitwt 
+- 24+
+- she/her and they/them
+-   mha want more animes…
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}❗ランキング：7位❗(グラフィックボード)
+
+「■GAMING GeForce RTX 3060 Twin Edge OC ZTRTX3060TWINEDGEOC-12GBGDR6/ ZT-A30600H-10M」
+メーカ:ZOTAC
+
+価格:¥58,666✨
+🔥売り切れ間近🔥(07:12)
+
+https://t.co/5LTdz6B3Oe
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@KAFKA_Dev Oprotten met die lui!!!!!
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}[特価]  05/14 07:11 Minecraft (マインクラフト): Java & Bedrock Edi
+https://t.co/ZaWjSPEFys
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ani_obsessive: From: Franz Kafka's A Country Doctor (2007), dir. Koji Yamamura, Yamamura Animation https://t.co/vNEkoT6wxk
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafkasdaily: Kafka : you came
+
+Blade : you called https://t.co/c8favTIfk1
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Asun3tte: #kafka #HonkaiStarRail https://t.co/b76ADDToAk
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@JulMangos @epithetologist @manu_l10n OOC pero IN Kafka (ojalá)
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafkasdaily: we need more Kafka official art because I can’t get over these https://t.co/erw54PmdQ9
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:12:32 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@kulo_jawa01 Welp gonna wait Seele for the next poll, anyway good luck drawing mommy kafka 👀
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@rebelempiricist @DepartureJay Oh as if his plots are not massively flawed and the characters not often stock? Yet there he is. See Crumb on Dick for proper homage like Genesis & Kafka got
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@gonetomorrow5am @unnesmenfess Sekarang aku masih disitu, emang sikap dari pemilik kos ini sangat jauh dikatakan baik. Listrik yang bayar anak kos, alasan boros karena dipakai buat naikkan air, tapi air seringnya abis sama keluarganya. Libur semuanya balik, bapak kos ngadu kalo ngisiin listriknya selama libur
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kavehlune: kafka https://t.co/LObgfiJhb3
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AymenHitta: @denicmarko I'm the guy who wakes up every morning and says "man I really wanna code in java today" :)
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @zara_3969: カフカ👓
+#スターレイル #崩壊スタートレイル #HonkaiStarRail #Kafka https://t.co/JNgcHIgduR
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Guilhermin420: @Chung_Bezerra @FulanoTL @comunidademc não é, por mais incrivel que pareça, o bedrock faz a mão mais para baixo
+
+Bedrock…
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @vitinhoazz: Fazer agendamento no Java com Sql é pura maluquice na moral por isso que odeio tudo que é de Back end 🤡
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@kavehlune MDS RAFA Q LINDO
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@Widino sate ayam sama sate kambing enak bgt minumnya teh!!🤍
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @KAFKA_Dev: Niet alleen de halve kamer, ook 90% van Nederland is KLAAR met die elitaire, totalitaire boeren-haters.
+
+Doe een ❤️ & RT als…
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @NueBunny: Kafka x Makima 💜
+#HonkaiStarRail https://t.co/vx7NWAiA2P
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}VONGRATULATIOOOONNNNNNNNNN 🥰🥰🥰 https://t.co/MGLvNz1qmf
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@techgix It was a java code just didn't have enough data watching from scratch had to download from Github directly
+2023-05-14 01:13:19 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @ArmsOut4MrTrout: I love Rana from Minecraft!! She is a removed mob from Indev 0.31 Java Edition. I have been meaning to draw her for a…
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@TranscendBeat @JulMangos @manu_l10n MNONE PUEDO MA´ÑSSSSSSSSSSSSSSSSSSS
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}Pi Network Seminar and Pi Exhibition Hall, May 13th, 2023, Garut, West Java, Indonesia, actively pondered and continued to develop the spirit # PINETWORK GCV# PINETWORK @PiCoreTeam https://t.co/UEasIVet7r
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Wilaxox: 「  Redoing  Pinned」
+—✨looking for #anitwt #hsrtwt #genshintwt mutuals 
+
+ – she/her, 21
+— future Blade/Kafka main
+ –  main Bron…
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @masoq095: Kafka be looking different these days
+#honkaistarrail #chainsawman #Kafka https://t.co/aW84V37pQt
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}@caius1001 @Ariekanarie67 @vanranstmarc @KAFKA_Dev Ik ga nog 1 keer the logic in your madness proberen te begrijpen voordat ik je wegflikker.
+Leg nou eens rustig uit wat hier zo grievend aan is want daar zit je nou al een hele dag pedant en leugenachtig  over te doen zonder dat je de bedreiger die over Marokkanen begon aanpakt.
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @Adventzx1: The real reason Himeko hates Kafka https://t.co/ggL9hfYtRd
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @AmschelKavka: I wish you a great big garden and blue skies.
+
+Franz Kafka, 1921.
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kafka_daily: still can't get over chibi kafka...she's so cute!! https://t.co/O0DVxzlsox
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @maciejwalkowiak: Which non-mainstream Java libraries you like and wish were more popular?
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @qsycnx: miko wants moots ??
+
+– they/them , 08' 
+– kny jjk csm bsd dn bd ons + lots more
+– txt lsf bts rv svt xg twice + more
+– hsr & ge…
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @fuedicho: "Cualquiera que conserve la capacidad de ver la belleza no envejecerá nunca".
+Franz Kafka
+#Fuedicho https://t.co/kdm5yZY85z
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}// This line doesn't actually do anything, but the code stops working when I delete it.
+
+#programming #programmingjoke #programminghumor #Python #javascript #Java
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}🫣🫣 #kafxuan #kafka #fuxuan https://t.co/rQwL6lWhCh
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @kanabunee99: Java歴3年 https://t.co/fvSCZJbTZU
+2023-05-14 01:14:03 [main] INFO  c.m.s.l.TwitterKafkaStatusListener - Twitter status with {}RT @nymph1310: Dominated 🐕‍🦺
+
+#kafhime  #スターレイル    #Honkaistarrail   #Kafka #Himeko https://t.co/0Hbsoin4S9

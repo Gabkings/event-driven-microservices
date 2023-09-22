@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/twitter_to_kafka_svs/app-config-data/app-config-data.iml" filepath="$PROJECT_DIR$/twitter_to_kafka_svs/app-config-data/app-config-data.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/event_dd_ms.iml" filepath="$PROJECT_DIR$/.idea/event_dd_ms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twitter_to_kafka_svs/spring_to_kafka/spring_to_kafka.iml" filepath="$PROJECT_DIR$/twitter_to_kafka_svs/spring_to_kafka/spring_to_kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/twitter_to_kafka_svs/twitter_to_kafka_svs.iml" filepath="$PROJECT_DIR$/twitter_to_kafka_svs/twitter_to_kafka_svs.iml" />
     </modules>
   </component>

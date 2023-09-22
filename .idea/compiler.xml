@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
-      <module name="twitter_to_kafka_svs" target="17" />
-    </bytecodeTargetLevel>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app-config-data" />
+        <module name="spring_to_kafka" />
+      </profile>
+    </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="twitter_to_kafka_svs" options="" />
+      <module name="app-config-data" options="-parameters" />
+      <module name="spring_to_kafka" options="-parameters" />
+      <module name="twitter_to_kafka_svs" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,16 @@
+2023-05-07 07:09:39 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 23284 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-07 07:09:39 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-07 07:09:39 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 0.762 seconds (JVM running for 1.771)
+2023-05-07 07:09:39 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-05-07 07:09:39 [main] INFO  c.m.s.SpringToKafkaDemo - null hhh
+2023-05-07 07:10:33 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 17532 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-07 07:10:33 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-07 07:10:33 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 0.904 seconds (JVM running for 1.676)
+2023-05-07 07:10:33 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-05-07 07:10:33 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-05-07 07:10:59 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 30596 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-05-07 07:10:59 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-05-07 07:11:00 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 0.884 seconds (JVM running for 1.61)
+2023-05-07 07:11:00 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-05-07 07:11:00 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-05-07 07:11:00 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh

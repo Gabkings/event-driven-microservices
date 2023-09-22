@@ -1,0 +1,175 @@
+2023-07-16 18:46:29 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 6740 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-07-16 18:46:29 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-07-16 18:46:29 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.259 seconds (JVM running for 3.707)
+2023-07-16 18:46:29 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-07-16 18:46:29 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 18:46:29 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-07-16 18:46:29 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 18:46:31 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-07-16 18:46:32 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-16 18:46:32 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.main(SpringToKafkaDemo.java:31)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:88)
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:41)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.run(SpringToKafkaDemo.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
+	... 5 common frames omitted
+2023-07-16 18:47:26 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 28356 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-07-16 18:47:26 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-07-16 18:47:27 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 0.989 seconds (JVM running for 1.757)
+2023-07-16 18:47:27 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-07-16 18:47:27 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 18:47:27 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-07-16 18:47:27 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 18:47:29 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-07-16 18:47:29 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-16 18:47:29 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.main(SpringToKafkaDemo.java:31)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:88)
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:41)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.run(SpringToKafkaDemo.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
+	... 5 common frames omitted
+2023-07-16 18:54:19 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 26596 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-07-16 18:54:19 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-07-16 18:54:19 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.099 seconds (JVM running for 1.908)
+2023-07-16 18:54:19 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-07-16 18:54:19 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 18:54:19 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-07-16 18:54:19 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 18:54:22 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-07-16 18:54:23 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-16 18:54:23 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.main(SpringToKafkaDemo.java:31)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:88)
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:41)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.run(SpringToKafkaDemo.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
+	... 5 common frames omitted
+2023-07-16 18:59:19 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 2716 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-07-16 18:59:19 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-07-16 18:59:20 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.247 seconds (JVM running for 2.135)
+2023-07-16 18:59:20 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-07-16 18:59:20 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 18:59:20 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-07-16 18:59:20 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 18:59:21 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-07-16 18:59:22 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-16 18:59:22 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.main(SpringToKafkaDemo.java:31)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:88)
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:41)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.run(SpringToKafkaDemo.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
+	... 5 common frames omitted
+2023-07-16 19:09:33 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 14856 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-07-16 19:09:33 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-07-16 19:09:33 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.016 seconds (JVM running for 2.503)
+2023-07-16 19:09:33 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-07-16 19:09:33 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 19:09:33 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-07-16 19:09:33 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 19:09:35 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-07-16 19:09:36 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-16 19:09:36 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.main(SpringToKafkaDemo.java:31)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:88)
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:41)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.run(SpringToKafkaDemo.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
+	... 5 common frames omitted
+2023-07-16 20:29:38 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 23724 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-07-16 20:29:38 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-07-16 20:29:38 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.017 seconds (JVM running for 1.856)
+2023-07-16 20:29:38 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-07-16 20:29:38 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 20:29:38 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-07-16 20:29:38 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 20:29:41 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-07-16 20:29:42 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-16 20:29:42 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.main(SpringToKafkaDemo.java:31)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:88)
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:41)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.run(SpringToKafkaDemo.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
+	... 5 common frames omitted
+2023-07-16 23:52:05 [main] INFO  c.m.s.SpringToKafkaDemo - Starting SpringToKafkaDemo using Java 17.0.5 on TECH-8Z8R with PID 12616 (C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms\twitter_to_kafka_svs\spring_to_kafka\target\classes started by gabriel.gitonga in C:\Users\gabriel.gitonga\Desktop\microservices\event_dd_ms)
+2023-07-16 23:52:05 [main] INFO  c.m.s.SpringToKafkaDemo - No active profile set, falling back to 1 default profile: "default"
+2023-07-16 23:52:06 [main] INFO  c.m.s.SpringToKafkaDemo - Started SpringToKafkaDemo in 1.166 seconds (JVM running for 2.213)
+2023-07-16 23:52:06 [main] INFO  c.m.s.SpringToKafkaDemo - App starts...
+2023-07-16 23:52:06 [main] INFO  c.m.s.SpringToKafkaDemo - [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 23:52:06 [main] INFO  c.m.s.SpringToKafkaDemo - Hello microservices! hhh
+2023-07-16 23:52:06 [main] INFO  c.m.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-07-16 23:52:08 [main] INFO  c.m.s.r.impl.TwitterV2StreamHelper - Created rules for twitter stream Java
+2023-07-16 23:52:09 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-16 23:52:09 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.main(SpringToKafkaDemo.java:31)
+Caused by: java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "line" is null
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:88)
+	at com.ms.spring_to_kafka.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:41)
+	at com.ms.spring_to_kafka.SpringToKafkaDemo.run(SpringToKafkaDemo.java:40)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:768)
+	... 5 common frames omitted
